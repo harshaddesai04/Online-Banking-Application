@@ -197,6 +197,21 @@ nav {
   cursor: pointer;
 }
 
+ /* Print Transaction History Button */
+ .btn--print {
+  margin-left: 20px;
+   border: none; 
+  /* border-radius: 15px; */
+  background: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+          
+ }
+ .btn--print:hover{
+  color: #666;
+ }
+
 .operation {
   border-radius: 1rem;
   padding: 3rem 4rem;
