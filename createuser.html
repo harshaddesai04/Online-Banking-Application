@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank of Maharashtra - Create Account</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+     
+      }
+      h1 {
+        background-color: #00dbde;
+        background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+
+        color: #fff;
+        padding: 20px 0;
+        margin: 0;
+      }
+      form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+
+        font-size: 19px;
+        font-weight: 700;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: left;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type='text'],
+      input[type='number'],
+      input[type='email'],
+      input[type='password'],
+      input[type='file'] {
+        width: 70%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background: transparent;
+      }
+      input[type='checkbox'] {
+        margin-right: 5px;
+      }
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      button:hover {
+        background-color: #83acd8;
+      }
+      button a{
+        text-decoration: none;
+        color: #fff;
+      }
+      terms {
+    font-size: 16px; 
+    color: black;
+    font-weight: 600;
+    text-align: left;
+  }
+      @media (max-width: 768px) {
+   
+    form {
+      max-width: 90%;
+    }
+  }
+    </style>
+  </head>
+  <body>
+    <h1>Bank of Maharashtra - Create Account</h1>
+    <form>
+      <label for="bankname">
+        <p>Bank Name</p>
+        <input
+          type="text"
+          id="bankname"
+          name="bankname"
+          placeholder="BANK OF MAHARASHTRA"
+          readonly
+        />
+      </label>
+      <label for="accountnumber">
+        <p>Account Number</p>
+        <input type="text" id="accountnumber" name="accountnumber" required />
+      </label>
+      <label for="nationalid">
+        <p>National ID Card</p>
+        <input type="text" id="nationalid" name="nationalid" required />
+      </label>
+      <label for="tin">
+        <p>TIN</p>
+        <input type="text" id="tin" name="tin" required />
+      </label>
+      <label for="phone">
+        <p>Phone</p>
+        <input type="text" id="phone" name="phone" required />
+      </label>
+      <label for="email">
+        <p>Email</p>
+        <input type="email" id="email" name="email" required />
+      </label>
+      <label for="address">
+        <p>Address</p>
+        <input type="text" id="address" name="address" required />
+      </label>
+      <label for="photo">
+        <p>Photo</p>
+        <input type="file" id="photo" name="photo" accept="image/*" required />
+      </label>
+      <label for="userid">
+        <p>User ID</p>
+        <input type="text" id="userid" name="userid" required />
+      </label>
+      <label for="password">
+        <p>Password</p>
+        <input type="password" id="password" name="password" required />
+      </label>
+      <label for="confirm_password">
+        <p>Confirm Password</p>
+        <input
+          type="password"
+          id="confirm_password"
+          name="confirm_password"
+          required
+        />
+      </label>
+      <label>
+        <input type="checkbox" id="terms" required />
+        <p class="terms">
+          To open an account, you must meet our eligibility requirements. Keep
+          your login information confidential. Report unauthorized access.
+          Review our fee schedule for charges on specific services. We protect
+          your data as described in our Privacy Policy. Contact customer support
+          for issue resolution. We may update these terms. Notice will be
+          provided.
+        </p>
+      </label>
+     <button id="newaccount"> <a href="currentAccount.html"
+      >Create Account</a></button>
+    
+    <script src="script1.js"></script>
+  </body>
+</html>

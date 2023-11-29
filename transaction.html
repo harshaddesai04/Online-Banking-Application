@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaction Money</title>
+    <link rel="stylesheet" href="style1.css" />
+    <style>
+      body {
+        background: linear-gradient(to bottom, #d3e1e9, #f3f3f3);
+      }
+
+      nav {
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .welcome {
+        font-size: 1.9rem;
+        font-weight: 500;
+        color: #444;
+      }
+
+      .logo {
+        height: 5.25rem;
+      }
+
+      /* Input Fields */
+      .login__input {
+        background-color: rgba(255, 255, 255, 0.9);
+        font-family: "Poppins", sans-serif;
+        font-size: 1.6rem;
+        border-radius: 10rem;
+        border: 1px solid #ccc;
+      }
+
+      /* Login Button */
+      .login__btn {
+        background-color: #39b385;
+        color: #fff;
+        border: none;
+        font-size: 2.2rem;
+        cursor: pointer;
+      }
+
+      .login__btn:hover {
+        background-color: #9be15d;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <p class="welcome">Log in to get started</p>
+      <img src="logo.png" alt="Logo" class="logo" />
+      <h1 class="bank-name">Bank Of Maharashtra</h1>
+      <form class="login">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your username"
+          class="login__input login__input--user"
+        />
+        <label for="pin">PIN</label>
+        <input
+          type="password"
+          id="pin"
+          placeholder="Enter your PIN"
+          maxlength="4"
+          class="login__input login__input--pin"
+        />
+        <button class="login__btn">&rarr;</button>
+      </form>
+    </nav>
+    <main class="app">
+      <div class="balance">
+        <div>
+          <p class="balance__label">Current balance</p>
+          <p class="balance__date">As of <span class="date"></span></p>
+        </div>
+        <p class="balance__value">0000€</p>
+      </div>
+
+      <div class="movements">
+        <div class="movements__row">
+          <div class="movements__type movements__type--deposit">2 deposit</div>
+          <div class="movements__date">3 days ago</div>
+          <div class="movements__value">4 000€</div>
+        </div>
+        <div class="movements__row">
+          <div class="movements__type movements__type--withdrawal">
+            1 withdrawal
+          </div>
+          <div class="movements__date">24/01/2037</div>
+          <div class="movements__value">-378€</div>
+        </div>
+      </div>
+
+      <div class="summary">
+        <p class="summary__label">In</p>
+        <p class="summary__value summary__value--in">0000€</p>
+        <p class="summary__label">Out</p>
+        <p class="summary__value summary__value--out">0000€</p>
+        <p class="summary__label">Interest</p>
+        <p class="summary__value summary__value--interest">0000€</p>
+        <button class="btn--sort">&downarrow; SORT</button>
+      </div>
+    </main>
+    <script src="script1.js"></script>
+  </body>
+</html>
